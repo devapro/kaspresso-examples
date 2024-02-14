@@ -1,13 +1,20 @@
 package com.kaspersky.kaspressample.external_screens
 
+import androidx.test.espresso.action.ViewActions
+import com.kaspersky.components.kautomator.component.scroll.UiScrollView
 import com.kaspersky.components.kautomator.component.text.UiButton
+import com.kaspersky.components.kautomator.intercept.operation.UiObjectAction
 import com.kaspersky.kaspressample.MainActivity
 import com.kaspersky.kaspressample.R
 
 object UiMainScreen : UiSampleScreen<UiMainScreen>() {
 
-    override val layoutId: Int? = R.layout.activity_main
-    override val viewClass: Class<*>? = MainActivity::class.java
+    override val layoutId: Int = R.layout.activity_main
+    override val viewClass: Class<*> = MainActivity::class.java
+
+    val scrollView = UiScrollView { withId(this@UiMainScreen.packageName, "activity_main_scroll_view") }
+
+    val webButton = UiButton { withId(this@UiMainScreen.packageName, "activity_main_webview_sample_button") }
 
     val simpleButton = UiButton { withId(this@UiMainScreen.packageName, "activity_main_simple_sample_button") }
 
@@ -22,4 +29,8 @@ object UiMainScreen : UiSampleScreen<UiMainScreen>() {
     val measureButton = UiButton { withId(this@UiMainScreen.packageName, "activity_main_measure_sample_button") }
 
     val mixedButton = UiButton { withId(this@UiMainScreen.packageName, "activity_with_mixed_views_button") }
+
+    fun scrollToTheEnd() {
+        scrollView.scrollToEnd()
+    }
 }

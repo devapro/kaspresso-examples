@@ -4,7 +4,7 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.kaspersky.components.composesupport.config.withComposeSupport
 import com.kaspersky.components.composesupport.interceptors.behavior.impl.systemsafety.SystemDialogSafetySemanticsBehaviorInterceptor
-import com.kaspersky.kaspressample.compose.MainActivity
+import com.kaspersky.kaspressample.compose.MainComposeActivity
 import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.params.FlakySafetyParams
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
@@ -30,7 +30,7 @@ class ComposeCustomizeTest : TestCase(
 ) {
 
     @get:Rule
-    val composeTestRule = createAndroidComposeRule<MainActivity>()
+    val composeTestRule = createAndroidComposeRule<MainComposeActivity>()
 
     @Test
     fun test() = run {

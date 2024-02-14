@@ -8,13 +8,9 @@ import androidx.test.rule.GrantPermissionRule
 import com.kaspersky.components.composesupport.config.withComposeSupport
 import com.kaspersky.kaspressample.MainActivity
 import com.kaspersky.kaspressample.R
-import com.kaspersky.kaspressample.composesupport.sample.screen.ComposeMainScreen
-import com.kaspersky.kaspressample.composesupport.sample.screen.ComposeSanityFlakyScreen
 import com.kaspersky.kaspressample.external_screens.ComposeUiMixedScreen
 import com.kaspersky.kaspressample.external_screens.UiMainScreen
-import com.kaspersky.kaspressample.external_screens.UiMainScreen.measureButton
 import com.kaspersky.kaspressample.external_screens.UiMixedScreen
-import com.kaspersky.kaspresso.idlewaiting.KautomatorWaitForIdleSettings
 import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
 import io.github.kakaocup.compose.node.element.ComposeScreen
@@ -44,22 +40,16 @@ class KautomatorMixedTest : TestCase(
     val activityRule = activityScenarioRule<MainActivity>()
 
     @get:Rule
-    val composeTestRule = createAndroidComposeRule<com.kaspersky.kaspressample.compose.MainActivity>()
+    val composeTestRule = createAndroidComposeRule<com.kaspersky.kaspressample.compose.MainComposeActivity>()
 
     @Test
     fun test() = before {
         Assume.assumeTrue(" KautomatorWaitForIdleSettings.boost() works incorrectly on Android 5", Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP)
     }.after { }.run {
         step("MainScreen. Click on `mixed fragment` button") {
-            //TODO Why mixedButton is not found?
-//            UiMainScreen {
-//                mixedButton {
-//                    isDisplayed()
-//                    click()
-//                }
-//            }
             UiMainScreen {
-                measureButton {
+                scrollToTheEnd()
+                mixedButton {
                     isDisplayed()
                     click()
                 }

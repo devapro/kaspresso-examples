@@ -4,7 +4,7 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.kaspersky.components.composesupport.config.withComposeSupport
 import com.kaspersky.components.composesupport.interceptors.behavior.impl.flakysafety.FlakySafeSemanticsBehaviorInterceptor
-import com.kaspersky.kaspressample.compose.MainActivity
+import com.kaspersky.kaspressample.compose.MainComposeActivity
 import com.kaspersky.kaspressample.composesupport.sample.screen.ComposeMainScreen
 import com.kaspersky.kaspressample.composesupport.sample.screen.ComposeSanityFlakyScreen
 import com.kaspersky.kaspresso.kaspresso.Kaspresso
@@ -26,7 +26,7 @@ class FlakyComposeEnabledSanityTest : TestCase(
 ) {
 
     @get:Rule
-    val composeTestRule = createAndroidComposeRule<MainActivity>()
+    val composeTestRule = createAndroidComposeRule<MainComposeActivity>()
 
     @Test
     fun test() = run {

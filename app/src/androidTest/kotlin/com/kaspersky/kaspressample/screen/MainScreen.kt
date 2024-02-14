@@ -31,5 +31,7 @@ object MainScreen : KScreen<MainScreen>() {
 
     val withToolbarButton = KButton { withId(R.id.activity_with_toolbar_button) }
 
+    val mixedButton = KButton { withId(R.id.activity_with_mixed_views_button) }
+
     val descriptionText = KTextView { withId(R.id.activity_main_title) }
 }

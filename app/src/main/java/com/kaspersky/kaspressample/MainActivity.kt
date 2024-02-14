@@ -5,14 +5,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kaspersky.kaspressample.autoscrollfallback.AutoscrollScrollViewWithPaddingActivity
 import com.kaspersky.kaspressample.complex.ComplexComposeSampleActivity
-import com.kaspersky.kaspressample.compose.MainActivity
+import com.kaspersky.kaspressample.compose.MainComposeActivity
 import com.kaspersky.kaspressample.continuously.ContinuouslySampleActivity
 import com.kaspersky.kaspressample.databinding.ActivityMainBinding
 import com.kaspersky.kaspressample.device.DeviceSampleActivity
 import com.kaspersky.kaspressample.devicefull.DeviceFullWindowSampleActivity
 import com.kaspersky.kaspressample.flaky.CommonFlakyActivity
 import com.kaspersky.kaspressample.idlingwait.WaitForIdleActivity
-import com.kaspersky.kaspressample.measure.MeasureActivity
 import com.kaspersky.kaspressample.mixed.MixedViewsActivity
 import com.kaspersky.kaspressample.simple.SimpleActivity
 import com.kaspersky.kaspressample.systemdialogs.SystemDialogsActivity
@@ -92,7 +91,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.activityComposeButton.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MainComposeActivity::class.java))
         }
 
         setContentView(binding.root)

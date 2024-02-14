@@ -16,7 +16,7 @@ import com.kaspersky.kaspressample.compose.features.sanityflaky.SanityFlakyViewM
 import com.kaspersky.kaspressample.compose.features.scroll.ScrollScreen
 import com.kaspersky.kaspresso.composesupport.sample.resources.C
 
-class MainActivity : AppCompatActivity() {
+class MainComposeActivity : AppCompatActivity() {
 
     private val simpleFlakyViewModel: SimpleFlakyViewModel by viewModels()
     private val sanityFlakyViewModel: SanityFlakyViewModel by viewModels()
