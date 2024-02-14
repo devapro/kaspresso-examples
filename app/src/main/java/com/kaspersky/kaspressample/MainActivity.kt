@@ -62,7 +62,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.activityMainMeasureSampleButton.setOnClickListener {
-            startActivity(Intent(this, MeasureActivity::class.java))
+            //TODO temporary solution
+            //startActivity(Intent(this, MeasureActivity::class.java))
+            startActivity(Intent(this, MixedViewsActivity::class.java))
         }
 
         binding.activityMainDeviceButton.setOnClickListener {

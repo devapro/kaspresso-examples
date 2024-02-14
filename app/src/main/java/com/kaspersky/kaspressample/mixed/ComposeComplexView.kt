@@ -13,7 +13,6 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.dp
 import com.kaspersky.kaspressample.R
-import com.kaspersky.kaspresso.composesupport.sample.resources.C
 
 @Composable
 fun ComposeComplexView() {
@@ -23,7 +22,7 @@ fun ComposeComplexView() {
         Button(
             modifier = Modifier
                 .fillMaxWidth()
-                .semantics { testTag = C.Tag.main_screen_simple_flaky_button },
+                .semantics { testTag = CTags.Tag.mix_screen_simple_first_button },
             content = {
                 Text(text = stringResource(id = R.string.main_screen_simple_flaky_button))
             },
@@ -33,7 +32,7 @@ fun ComposeComplexView() {
         Button(
             modifier = Modifier
                 .fillMaxWidth()
-                .semantics { testTag = C.Tag.main_screen_sanity_flaky_button },
+                .semantics { testTag = CTags.Tag.mix_screen_simple_second_button },
             content = {
                 Text(text = stringResource(id = R.string.main_screen_sanity_flaky_button))
             },

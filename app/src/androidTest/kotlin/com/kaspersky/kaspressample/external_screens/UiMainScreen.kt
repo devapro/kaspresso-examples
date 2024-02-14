@@ -20,4 +20,6 @@ object UiMainScreen : UiSampleScreen<UiMainScreen>() {
     val idleWaitingButton = UiButton { withId(this@UiMainScreen.packageName, "activity_main_idlewaiting_sample_button") }
 
     val measureButton = UiButton { withId(this@UiMainScreen.packageName, "activity_main_measure_sample_button") }
+
+    val mixedButton = UiButton { withId(this@UiMainScreen.packageName, "activity_with_mixed_views_button") }
 }

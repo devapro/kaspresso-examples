@@ -1,7 +1,6 @@
 package com.kaspersky.kaspressample.external_screens
 
-import com.kaspersky.components.kautomator.component.check.UiCheckBox
-import com.kaspersky.components.kautomator.component.edit.UiEditText
+import com.kaspersky.components.kautomator.component.common.views.UiView
 import com.kaspersky.components.kautomator.component.text.UiButton
 import com.kaspersky.components.kautomator.component.text.UiTextView
 import com.kaspersky.kaspressample.R
@@ -18,7 +17,7 @@ object UiMixedScreen : UiSampleScreen<UiMixedScreen>() {
 
     val textView = UiTextView { withId(this@UiMixedScreen.packageName, "textview") }
 
-    val edit = UiEditText { withId(this@UiMixedScreen.packageName, "edit") }
+    val textViewTitle = UiTextView { withId(this@UiMixedScreen.packageName, "text_view_title") }
 
-    val checkBox = UiCheckBox { withId(this@UiMixedScreen.packageName, "checkBox") }
+    val wrapperView = UiView { withId(this@UiMixedScreen.packageName, "wrapper_view") }
 }
