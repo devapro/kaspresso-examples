@@ -92,15 +92,13 @@ class KautomatorMixedTest : TestCase(
             }
         }
 
-        //TODO Why secondButton is not found?
-
-//        step("Click on the Second button") {
-//            ComposeScreen.onComposeScreen<ComposeUiMixedScreen>(composeTestRule) {
-//                secondButton {
-//                    assertIsDisplayed()
-//                    performClick()
-//                }
-//            }
-//        }
+        step("Click on the Second button") {
+            ComposeScreen.onComposeScreen<ComposeUiMixedScreen>(composeTestRule) {
+                secondButton {
+                    assertIsDisplayed()
+                    performClick()
+                }
+            }
+        }
     }
 }

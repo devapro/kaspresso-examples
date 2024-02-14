@@ -12,6 +12,7 @@ import com.kaspersky.kaspressample.device.DeviceSampleActivity
 import com.kaspersky.kaspressample.devicefull.DeviceFullWindowSampleActivity
 import com.kaspersky.kaspressample.flaky.CommonFlakyActivity
 import com.kaspersky.kaspressample.idlingwait.WaitForIdleActivity
+import com.kaspersky.kaspressample.measure.MeasureActivity
 import com.kaspersky.kaspressample.mixed.MixedViewsActivity
 import com.kaspersky.kaspressample.simple.SimpleActivity
 import com.kaspersky.kaspressample.systemdialogs.SystemDialogsActivity
@@ -61,9 +62,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.activityMainMeasureSampleButton.setOnClickListener {
-            //TODO temporary solution
-            //startActivity(Intent(this, MeasureActivity::class.java))
-            startActivity(Intent(this, MixedViewsActivity::class.java))
+            startActivity(Intent(this, MeasureActivity::class.java))
         }
 
         binding.activityMainDeviceButton.setOnClickListener {

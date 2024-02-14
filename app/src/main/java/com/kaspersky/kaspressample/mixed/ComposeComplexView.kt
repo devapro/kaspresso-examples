@@ -16,7 +16,7 @@ import com.kaspersky.kaspressample.R
 
 @Composable
 fun ComposeComplexView() {
-    Column (modifier = Modifier.fillMaxWidth().height(100.dp)) {
+    Column (modifier = Modifier.fillMaxWidth()) {
         Spacer(modifier = Modifier.height(16.dp))
 
         Button(
