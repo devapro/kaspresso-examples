@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kaspersky.kaspressample.R
 import com.kaspersky.kaspressample.databinding.ActivityMeasureBinding
+import com.kaspersky.kaspressample.databinding.ActivityMixedBinding
 
 class MixedViewsActivity : AppCompatActivity() {
 
@@ -14,7 +15,7 @@ class MixedViewsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding = ActivityMeasureBinding.inflate(layoutInflater)
+        val binding = ActivityMixedBinding.inflate(layoutInflater)
         binding.textview.text = "${getString(R.string.measure_fragment_text_textview)}$button2ClicksCount"
         binding.button2.setOnClickListener {
             button2ClicksCount++

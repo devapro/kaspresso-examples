@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="24dp">
 
     <TextView
         android:id="@+id/text_view_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:textSize="14pt"
         android:text="@string/mixed_fragment_title"/>
@@ -18,8 +18,6 @@
         android:id="@+id/button_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view_title"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
         android:text="@string/mixed_fragment_text_button_1"/>
 
@@ -27,8 +25,6 @@
         android:id="@+id/button_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_1"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:text="@string/mixed_fragment_text_button_2"/>
 
@@ -36,26 +32,13 @@
         android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_2"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="@string/mixed_fragment_text_textview"/>
 
-    <EditText
-        android:id="@+id/edit"
+    <com.kaspersky.kaspressample.mixed.WrapperView
+        android:id="@+id/wrapper_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textview"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="@string/mixed_fragment_text_edittext"/>
+        android:layout_marginTop="24dp"/>
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edit"
-        android:layout_marginTop="24dp"
-        android:text="@string/mixed_fragment_text_checkbox"/>
-
-</RelativeLayout>
+</LinearLayout>
