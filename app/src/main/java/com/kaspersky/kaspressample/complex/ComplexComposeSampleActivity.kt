@@ -1,4 +1,4 @@
-package com.kaspersky.kaspressample.compose
+package com.kaspersky.kaspressample.complex
 
 import android.os.Bundle
 import android.os.Handler

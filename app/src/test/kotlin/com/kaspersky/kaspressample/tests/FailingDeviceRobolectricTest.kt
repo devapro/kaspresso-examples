@@ -4,6 +4,7 @@ import android.Manifest
 import androidx.test.ext.junit.rules.activityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.GrantPermissionRule
+import androidx.test.runner.AndroidJUnit4
 import com.kaspersky.kaspressample.device.DeviceSampleActivity
 import com.kaspersky.kaspresso.instrumental.exception.NotSupportedInstrumentalTestException
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase

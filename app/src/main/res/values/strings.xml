@@ -18,6 +18,8 @@
     <string name="main_screen_system_dialogs_button">System Dialogs Sample</string>
     <string name="main_screen_change_language_mid_test_button">Change locale mid-test</string>
     <string name="main_screen_activity_with_toolbar_button">Activity with toolbar</string>
+    <string name="main_screen_activity_with_mixed_views">Activity with mixed views</string>
+    <string name="main_screen_activity_with_compose_views">Activity with Compose views</string>
 
     <!-- Auto scroll fallback screen -->
     <string name="autoscroll_scrollview_with_padding_title">Auto scroll ScrollView with padding</string>
@@ -35,6 +37,14 @@
     <string name="measure_fragment_text_textview" translatable="false">Button_2 clicks count = </string>
     <string name="measure_fragment_text_edittext" translatable="false">Some text</string>
     <string name="measure_fragment_text_checkbox" translatable="false">Checkbox</string>
+
+    <!-- Mixed fragment screen -->
+    <string name="mixed_fragment_title" translatable="false">Mixed Fragment</string>
+    <string name="mixed_fragment_text_button_1" translatable="false">BUTTON 1</string>
+    <string name="mixed_fragment_text_button_2" translatable="false">BUTTON 2</string>
+    <string name="mixed_fragment_text_textview" translatable="false">Button_2 clicks count = </string>
+    <string name="mixed_fragment_text_edittext" translatable="false">Some text</string>
+    <string name="mixed_fragment_text_checkbox" translatable="false">Checkbox</string>
 
     <!-- Device Sample Activity -->
     <string name="device_sample_title" translatable="false">Device Sample</string>
@@ -189,4 +199,15 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+
+    <!--  Compose  -->
+    <!-- MainScreen -->
+    <string name="main_screen_simple_flaky_button" translatable="false">Simple flaky sample</string>
+    <string name="main_screen_sanity_flaky_button" translatable="false">Sanity flaky sample</string>
+    <string name="main_screen_scroll_button" translatable="false">Scroll button</string>
+    <!-- SimpleFlakyScreen -->
+    <string name="simple_flaky_screen_first_button" translatable="false">First button</string>
+    <string name="simple_flaky_screen_second_button" translatable="false">Second button</string>
+    <!-- ScrollScreen -->
+    <string name="scroll_screen_button" translatable="false">Button</string>
 </resources>

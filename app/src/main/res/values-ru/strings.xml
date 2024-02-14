@@ -18,6 +18,8 @@
     <string name="main_screen_system_dialogs_button">System Dialogs пример</string>
     <string name="main_screen_change_language_mid_test_button">Сменить локаль во время теста</string>
     <string name="main_screen_activity_with_toolbar_button">Пример с toolbar</string>
+    <string name="main_screen_activity_with_mixed_views">Пример с xml+compose views</string>
+    <string name="main_screen_activity_with_compose_views">Пример с Compose views</string>
 
     <!-- Auto scroll fallback screen -->
     <string name="autoscroll_scrollview_with_padding_title">Auto scroll ScrollView with padding</string>

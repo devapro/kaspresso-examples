@@ -1,7 +1,7 @@
 package com.kaspersky.kaspressample.screen
 
 import com.kaspersky.kaspressample.R
-import com.kaspersky.kaspressample.compose.ComplexComposeSampleActivity
+import com.kaspersky.kaspressample.complex.ComplexComposeSampleActivity
 import com.kaspersky.kaspresso.screens.KScreen
 import io.github.kakaocup.kakao.text.KButton
 

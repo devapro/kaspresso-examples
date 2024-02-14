@@ -52,6 +52,14 @@
             android:label="@string/simple_fragment_title"/>
 
         <activity
+            android:name=".mixed.MixedViewsActivity"
+            android:label="@string/simple_fragment_title"/>
+
+        <activity
+            android:name=".compose.MainActivity"
+            android:label="@string/simple_fragment_title"/>
+
+        <activity
             android:name=".web.WebViewActivity"
             android:label="@string/main_screen_webview_button"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
@@ -77,7 +85,7 @@
             android:label="@string/upgrade_title"/>
 
         <activity
-            android:name=".compose.ComplexComposeSampleActivity"
+            android:name=".complex.ComplexComposeSampleActivity"
             android:label="@string/main_screen_complex_compose_sample_button"/>
 
         <activity

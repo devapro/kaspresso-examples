@@ -74,7 +74,9 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material")
+    implementation("androidx.compose.runtime:runtime-livedata")
+    implementation("androidx.navigation:navigation-compose:2.5.2")
 
     testImplementation("junit:junit:4.13.2")
 
@@ -93,4 +95,7 @@ dependencies {
 
     testImplementation("com.kaspersky.android-components:kaspresso:1.5.3")
     androidTestImplementation("com.kaspersky.android-components:kaspresso:1.5.3")
+
+    testImplementation("com.kaspersky.android-components:kaspresso-compose-support:1.5.3")
+    androidTestImplementation("com.kaspersky.android-components:kaspresso-compose-support:1.5.3")
 }

@@ -4,7 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kaspersky.kaspressample.autoscrollfallback.AutoscrollScrollViewWithPaddingActivity
-import com.kaspersky.kaspressample.compose.ComplexComposeSampleActivity
+import com.kaspersky.kaspressample.complex.ComplexComposeSampleActivity
+import com.kaspersky.kaspressample.compose.MainActivity
 import com.kaspersky.kaspressample.continuously.ContinuouslySampleActivity
 import com.kaspersky.kaspressample.databinding.ActivityMainBinding
 import com.kaspersky.kaspressample.device.DeviceSampleActivity
@@ -81,6 +82,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.activityWithToolbarButton.setOnClickListener {
             startActivity(Intent(this, WithToolbarActivity::class.java))
+        }
+
+        binding.activityWithMixedViewsButton.setOnClickListener {
+            startActivity(Intent(this, WithToolbarActivity::class.java))
+        }
+
+        binding.activityComposeButton.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
         setContentView(binding.root)
