@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "KTestExamples"
 include(":app")
- 
+include(":ui-tests")

@@ -80,6 +80,9 @@ dependencies {
 
     testImplementation("junit:junit:4.13.2")
 
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
@@ -89,9 +92,6 @@ dependencies {
 
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.ext:junit-ktx:1.1.5")
-
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     testImplementation("com.kaspersky.android-components:kaspresso:1.5.3")
     androidTestImplementation("com.kaspersky.android-components:kaspresso:1.5.3")
